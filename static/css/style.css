@@ -1,0 +1,36 @@
+.bg-body-tertiary {
+    background-color: #072400 !important;
+}
+
+.logo-style{
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+
+.font-white{
+    color: #FFFFFF;
+}
+
+.font-white.hover:hover{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+.nav-btn{
+    background-color: #6b868a;
+}
+
+.navbar-collapse {
+    background-color: #6B868A;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px){
+    .navbar-collapse {
+        background-color: #072400;
+    }
+}
