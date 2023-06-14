@@ -2,22 +2,22 @@
     background-color: #072400 !important;
 }
 
-.logo-style{
-    text-decoration:none;
-    font-weight:bold;
+.logo-style {
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
-.font-white{
+.font-white {
     color: #FFFFFF;
 }
 
-.font-white.hover:hover{
+.font-white.hover:hover {
     color: #FFFFFF;
     font-weight: bolder;
 }
 
-.nav-btn{
+.nav-btn {
     background-color: #6b868a;
 }
 
@@ -29,8 +29,26 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .navbar-collapse {
         background-color: #072400;
     }
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+#holder {
+    width: 500px;
+    height: 800px;
+    background-color: #6b868a;
 }
