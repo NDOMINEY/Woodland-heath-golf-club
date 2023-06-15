@@ -1,54 +1,39 @@
-.bg-body-tertiary {
-    background-color: #072400 !important;
+/* Navbar custom styling */
+
+#navbar {
+    z-index: 1;
+    background-color: #FFFFFF !important;
 }
 
-.logo-style {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
+.right-align {
+    flex-direction: row-reverse;
 }
 
-.font-white {
-    color: #FFFFFF;
+.align-right {
+    text-align: right;
 }
 
-.font-white.hover:hover {
-    color: #FFFFFF;
-    font-weight: bolder;
-}
-
-.nav-btn {
-    background-color: #6b868a;
-}
-
-.navbar-collapse {
-    background-color: #6B868A;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding-left: 25px;
-    margin-bottom: 10px;
-}
-
-@media (min-width: 992px) {
-    .navbar-collapse {
-        background-color: #072400;
+@media only screen and (min-width: 992px) {
+    .align-right {
+        position: absolute;
+        right: 10px;
     }
 }
 
+#toggle {
+    position: absolute;
+    right: 10px
+}
 
-.navbar {
+.logo_nav {
+    width: 200px;
+    height: auto;
+}
+
+/* Home Page */
+
+.landing_img {
     position: fixed;
-    width: 100%;
-    z-index: 1;
-    display: none;
-}
-
-img {
+    top: 0;
     object-fit: cover;
-}
-
-#holder {
-    width: 500px;
-    height: 800px;
-    background-color: #6b868a;
 }
