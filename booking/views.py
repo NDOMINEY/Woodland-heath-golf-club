@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 
 def home_view(request):
-    return render(request, 'html/home.html')
+    return render(request, 'booking/home.html')
