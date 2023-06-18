@@ -2,7 +2,8 @@
 
 #navbar {
     z-index: 1;
-    background-color: #FFFFFF !important;  /* To override !important user is Bootstrap */
+    background-color: #FFFFFF !important;
+    /* To override !important user is Bootstrap */
 }
 
 .right-align {
@@ -36,4 +37,15 @@
     position: fixed;
     top: 0;
     object-fit: cover;
+}
+
+#background-img {
+    z-index: -1;
+}
+
+
+/* Button styling for forms */
+
+.padding-25 {
+    padding: 25px;
 }

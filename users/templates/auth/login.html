@@ -7,6 +7,40 @@ Woodland Heath Golf Club - Login
 
 {% block content %}
 
-<h1>TEST</h1>
+<div>
+    <img id="background-img" src="{% static 'images/golfcourse-1.jpg' %}" class="d-block w-100 min-vh-100 landing_img"
+        alt="Golf Course Fairway">
+</div>
+
+
+<form id="form-colour" class="padding-25 row">
+    <div class="row justify-content-center">
+        <div class="rounded-top-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10 text-center">
+            <h1>Login</h1>
+            <br>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+            <br>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
+            <label for="inputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword1">
+            <br>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10 text-center">
+            <button type="submit" class="btn btn-secondary">Let's go!</button>
+        </div>
+    </div>
+</form>
 
 {% endblock %}
