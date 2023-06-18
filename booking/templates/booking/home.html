@@ -12,4 +12,15 @@ Woodland Heath Golf Club
         alt="Golf Course Fairway">
 </div>
 
+{% if messages %}
+{% for message in messages %}
+
+<div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+    <p>{{ message }}</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+
+
 {% endblock %}
