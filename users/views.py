@@ -25,3 +25,9 @@ def login_user(request):
 
     else:
         return render(request, 'auth/login.html')
+
+
+def logout_view(request):
+    logout(request)
+
+    return render(request, 'booking/home.html')
