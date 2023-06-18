@@ -13,25 +13,35 @@ Woodland Heath Golf Club - Login
 </div>
 
 
-<form id="form-colour" class="padding-25 row">
+<form action="" method="POST" class="padding-25 row">
+    {% csrf_token %}
+
+
+
     <div class="row justify-content-center">
         <div class="rounded-top-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10 text-center">
-            <h1>Login</h1>
-            <br>
+            {% if messages %}
+            {% for message in messages %}
+            <p{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</p>
+                {% endfor %}
+
+                {% endif %}
+                <h1>Login</h1>
+                <br>
         </div>
     </div>
 
     <div class="row justify-content-center">
         <div class="bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
-            <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username">
             <br>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
-            <label for="inputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword1">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
             <br>
         </div>
     </div>
