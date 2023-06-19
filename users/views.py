@@ -33,3 +33,7 @@ def logout_view(request):
         request, "You have been logged out.")
 
     return render(request, 'booking/home.html')
+
+
+def register_user(request):
+    return render(request, 'auth/register.html')
