@@ -4,11 +4,23 @@ from django import forms
 
 
 class UserRegistration(UserCreationForm):
-    email = forms.EmailField()
-    first_name = forms.CharField(max_length=30, min_length=2)
-    last_name = forms.CharField(max_length=30, min_length=2)
+    email = forms.EmailField(widget=forms.EmailInput(
+        attrs={'class': 'form-control'}))
+    first_name = forms.CharField(
+        max_length=30, min_length=2, widget=forms.TextInput(
+            attrs={'class': 'form-control'}))
+    last_name = forms.CharField(
+        max_length=30, min_length=2, widget=forms.TextInput(
+            attrs={'class': 'form-control'}))
 
     class Meta:
         model = User
         fields = ('username', 'email', 'first_name',
                   'last_name', 'password1', 'password2')
+
+    def __init__(self, *args, **kwargs):
+        super(UserRegistration, self).__init__(*args, **kwargs)
+
+        self.fields['username'].widget.attrs['class'] = 'form-control'
+        self.fields['password1'].widget.attrs['class'] = 'form-control'
+        self.fields['password2'].widget.attrs['class'] = 'form-control'
