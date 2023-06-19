@@ -4,5 +4,7 @@ $(document).ready(function () {
         $("#home").addClass("active");
     } else if ($(document).attr('title') == "Woodland Heath Golf Club - Login") {
         $("#login").addClass("active");
+    } else if ($(document).attr('title') == "Woodland Heath Golf Club - Register") {
+        $("#register").addClass("active");
     }
 });
