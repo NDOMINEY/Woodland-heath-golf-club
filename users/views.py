@@ -34,7 +34,7 @@ def logout_view(request):
     messages.success(
         request, "You have been logged out.")
 
-    return render(request, 'booking/home.html')
+    return render(request, 'general/home.html')
 
 
 def register_user(request):
