@@ -1,0 +1,31 @@
+{% extends "general/base.html" %}
+{% load static %}
+
+{% block title %}
+Woodland Heath Golf Club - Book a Tee Time
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <img id="background-img" src="{% static 'images/golfcourse-1.jpg' %}" class="d-block w-100 min-vh-100 landing_img"
+        alt="Golf Course Fairway">
+</div>
+
+<div class="padding-25 row justify-content-center ">
+    <form action="" method="POST"
+        class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
+        {% csrf_token %}
+        <div class="text-center">
+            <h1>Book a tee time!</h1>
+            <br>
+        </div>
+
+        {{ form }}
+        <div class="padding-25 text-center">
+            <button type="submit" class="btn btn-secondary">Let's go!</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
