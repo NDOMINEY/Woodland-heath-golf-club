@@ -29,3 +29,7 @@ class BookingTimes(models.Model):
                                              MinValueValidator(1)
                                          ]
                                          )
+
+    def __str__(self):
+        return f"{self.owner} tee time booking on {self.booking_date} at \
+            {self.booking_time} "
