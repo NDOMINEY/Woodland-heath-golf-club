@@ -11,5 +11,6 @@ class MakeBooking(ModelForm):
         fields = ('booking_date', 'booking_time',
                   'number_players')
         widgets = {
-            'booking_date': forms.widgets.DateInput(attrs={'type': 'date'})
+            'booking_date': forms.widgets.DateInput(attrs={'type': 'date'}),
+            'booking_time': forms.RadioSelect,
         }
