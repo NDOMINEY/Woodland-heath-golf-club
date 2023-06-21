@@ -49,3 +49,43 @@
 .padding-25 {
     padding: 25px;
 }
+
+/* Booking Form Styling */
+
+
+input.hidden-radio {
+    display: none;
+}
+
+ul.hidden-radio>li {
+    display: inline-flex;
+    list-style-type: none;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin-bottom: 5px;
+}
+
+
+ul.hidden-radio>li>label {
+    text-align: center;
+    width: 50px;
+}
+
+ul.hidden-radio>li.pressed {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #0b4d57 100%);
+    background-color: #599bb3;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
