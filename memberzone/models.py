@@ -23,7 +23,8 @@ def next_day():
 class BookingTimes(models.Model):
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    booking_date = models.DateField(default=next_day, validators=[MinValueValidator(next_day)],
+    booking_date = models.DateField(default=next_day,
+                                    validators=[MinValueValidator(next_day)],
                                     null=False, blank=False)
     booking_time = models.CharField(
         choices=TIME_SLOTS, blank=False, max_length=5)
@@ -37,5 +38,6 @@ class BookingTimes(models.Model):
                                          )
 
     def __str__(self):
-        return f"{self.owner} tee time booking on {self.booking_date} at \
-            {self.booking_time} "
+        return f"{self.booking_time}"
+
+    objects = models.Manager()
