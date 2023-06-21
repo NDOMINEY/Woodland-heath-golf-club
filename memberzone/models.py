@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
+from datetime import timedelta, date
+from django.utils import timezone
 
 # Create your models here.
 TIME_SLOTS = []
@@ -14,11 +16,15 @@ for hour in hours:
         TIME_SLOTS.append((time, time))
 
 
+def next_day():
+    return date.today() + timedelta(days=1)
+
+
 class BookingTimes(models.Model):
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    booking_date = models.DateField(
-        null=False, blank=False)
+    booking_date = models.DateField(default=next_day, validators=[MinValueValidator(next_day)],
+                                    null=False, blank=False)
     booking_time = models.CharField(
         choices=TIME_SLOTS, blank=False, max_length=5)
     created_on = models.DateTimeField(auto_now_add=True)
