@@ -3,6 +3,7 @@ from django.contrib import messages
 from datetime import datetime
 from . forms import MakeBooking, SelectBookingDate
 from . models import BookingTimes
+import json
 
 # Create your views here.
 
@@ -36,10 +37,10 @@ def booking(request):
     booking_date = request.session['booking_date']
 
     pull_booked_slots = BookingTimes.objects.filter(
-        booking_date=booking_date)
+        booking_date=booking_date).values('booking_time')
     booked_slots = list(pull_booked_slots)
     print(booked_slots)
 
     return render(request,
                   'memberzone/booking.html', {'form': form,
-                                              'booked_slots': booked_slots})
+                                              'booked_slots': json.dumps(booked_slots)})

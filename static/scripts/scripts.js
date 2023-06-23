@@ -42,19 +42,3 @@ $(document).ready(function () {
         }
     });
 });
-
-// Function to filter out booked time slots
-$(document).ready(function () {
-    $('ul.hidden-radio input:radio').each(function () {
-        if ($(this).attr('value') == "08:00") {
-            $(this).closest('li').addClass("d-none");
-        };
-
-    });
-
-    // find('label').each(function (i) {
-    //     if ($(this).text.includes(" 08:00")) {
-    //         $(this).addClass("d-none");
-    //     }
-    // });
-});

@@ -26,7 +26,52 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
     </form>
 </div>
 
-<div>
-{{ booked_slots }}</div>
+<script>
+    let slots = "{{ booked_slots }}";
+    var newslots = slots.split(',');
+
+    let new_times = newslots.map(getTime);
+
+    function getTime(slot) {
+        console.log(slot);
+        let timeArray = new Array();
+
+        timeArray.push(String(slot[34]));
+        timeArray.push(String(slot[35]));
+        timeArray.push(String(slot[36]));
+        timeArray.push(String(slot[37]));
+        timeArray.push(String(slot[38]));
+
+        let times = timeArray.toString();
+        times = times.replace(/,/g, "");
+
+        console.log(times)
+        return times;
+    };
+
+    console.log(new_times);
+
+
+    for (let i = 0; i < new_times.length; i++) {
+            console.log(new_times[i]);
+        
+        $(document).ready(function () {
+            $('ul.hidden-radio input:radio').each(function () {
+                if ($(this).attr('value') == new_times[i]) {
+                    $(this).closest('li').addClass("d-none");
+                };
+
+            });
+        });
+    }
+
+
+    $(document).ready(function () {
+        $("#test").text(slots);
+    });
+
+</script>
+
+<p id="test"></p>
 
 {% endblock %}
