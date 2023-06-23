@@ -1,7 +1,18 @@
 from django.contrib.auth.models import User
 from django import forms
 from django.forms import ModelForm
-from . models import BookingTimes
+from . models import BookingTimes, BookingDate
+
+
+class SelectBookingDate(ModelForm):
+
+    class Meta:
+        model = BookingDate
+        fields = ('booking_date',)
+        widgets = {
+            'booking_date': forms.widgets.DateInput(
+                attrs={'type': 'date', 'class': 'form-control'}),
+        }
 
 
 class MakeBooking(ModelForm):
@@ -17,7 +28,7 @@ class MakeBooking(ModelForm):
                 attrs={'class': 'hidden-radio'}),
         }
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, request, * args, **kwargs):
         super(MakeBooking, self).__init__(*args, **kwargs)
 
         time_slots = ['08:00', '08:15', '08:30', '08:45',
@@ -31,27 +42,10 @@ class MakeBooking(ModelForm):
                       '16:00', '16:15', '16:30', '16:45',
                       '17:00', '17:15', '17:30', '17:45',]
 
-        pull_booked_slots = BookingTimes.objects.filter(
-            booking_date='2023-06-24')
-        booked_slots = list(pull_booked_slots)
         available_slots = []
 
-        print(time_slots)
-        print(booked_slots)
-
-        for slot in booked_slots:
-            print(slot)
-            if slot in time_slots:
-                time_slots.remove(slot)
-                print(time_slots)
-        
-
-        for slot in time_slots:
-            available_slots.append((slot, slot))
-
-        # for time in time_slots:
-        #     if time not in booked_slots:
-        #         available_slots.append((time, time))
+        for time in time_slots:
+            available_slots.append((time, time))
 
         for field_name in self.fields:
             field = self.fields.get(field_name)

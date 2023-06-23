@@ -12,21 +12,19 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
         {% csrf_token %}
         <div class="text-center">
             <h1>Book a tee time!</h1>
-            <p id="date"></p>
+            <br>
+            <p id="date">Please select a date to view available times:</p>
             <br />
         </div>
-
         {{ form }}
+
         <div id="booking_submit" class="padding-25 text-center">
-            <button type="submit" class="btn btn-secondary">Let's go!</button>
+            <button type="submit" class="btn btn-secondary">View Available Times -></button>
         </div>
         <div id="error_container" class="d-none padding-25 text-center">
             <p id="date_error"></p>
         </div>
     </form>
 </div>
-
-<div>
-{{ booked_slots }}</div>
 
 {% endblock %}

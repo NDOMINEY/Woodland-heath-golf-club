@@ -20,6 +20,13 @@ def next_day():
     return date.today() + timedelta(days=1)
 
 
+class BookingDate(models.Model):
+
+    booking_date = models.DateField(default=next_day,
+                                    validators=[MinValueValidator(next_day)],
+                                    null=False, blank=False)
+
+
 class BookingTimes(models.Model):
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)

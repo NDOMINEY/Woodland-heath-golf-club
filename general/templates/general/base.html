@@ -33,7 +33,7 @@
                     <a id="contact" class="nav-link" href="#">Contact Us</a>
 
                     {% if user.is_authenticated %}
-                    <a id="booking" class="nav-link" href="{% url 'booking' %} ">Tee Time Booking</a>
+                    <a id="booking" class="nav-link" href="{% url 'booking_date' %} ">Tee Time Booking</a>
                     <a id="login" class="nav-link" href="{% url 'logout' %} ">Logout</a>
                     {% else %}
                     <a id="login" class="nav-link" href=" {% url 'login' %} ">Login</a>
