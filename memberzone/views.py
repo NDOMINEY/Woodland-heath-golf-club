@@ -33,7 +33,15 @@ def booking(request):
             form.instance.owner = request.user
             form.instance.booking_date = booking_date
             form.save()
-            messages.success(request, ("Booking Successful!"))
+
+            # Formatting booking info for message return
+            date_formatting = datetime.strptime(booking_date, '%Y-%m-%d')
+            booked_date = date_formatting.strftime("%d/%m/%Y")
+            time = form.cleaned_data['booking_time']
+            players = form.cleaned_data['number_players']
+
+            messages.success(request, (f'You have sucessfully booked a tee \
+                time for {booked_date} at {time} for {players} players.'))
             return redirect('home')
     else:
         form = MakeBooking()
@@ -42,7 +50,7 @@ def booking(request):
 
     date_formatting = datetime.strptime(booking_date, '%Y-%m-%d')
 
-    booked_date = date_formatting.strftime("%d-%m-%Y")
+    booked_date = date_formatting.strftime("%A %-d %b %Y")
 
     pull_booked_slots = BookingTimes.objects.filter(
         booking_date=booking_date).values('booking_time')
