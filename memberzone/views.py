@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from datetime import datetime
 from . forms import MakeBooking, SelectBookingDate
@@ -73,3 +73,10 @@ def view_bookings(request):
     bookings = BookingTimes.objects.filter(owner=request.user)
 
     return render(request, 'memberzone/view_bookings.html', {'bookings': bookings})
+
+
+def delete_bookings(request, booking_id):
+    booking = get_object_or_404(BookingTimes, id=booking_id)
+    booking.delete()
+
+    return redirect('view_bookings')
