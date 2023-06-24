@@ -12,14 +12,21 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
         {% csrf_token %}
         <div class="text-center">
             <h1>Book a tee time!</h1>
-            <p id="date"></p>
             <br />
+            <p>Date Selected: {{ booked_date }}</p>
+
         </div>
 
         {{ form }}
+    
         <div id="booking_submit" class="padding-25 text-center">
-            <button type="submit" class="btn btn-secondary">Let's go!</button>
+            <button type="submit" class="btn btn-secondary">Book Time</button>
         </div>
+
+        <div>
+            <a href = "{% url 'booking_date' %} "><h6>Choose Another Date</h6></a>
+        </div>
+
         <div id="error_container" class="d-none padding-25 text-center">
             <p id="date_error"></p>
         </div>
@@ -45,7 +52,7 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
         let times = timeArray.toString();
         times = times.replace(/,/g, "");
 
-        console.log(times)
+        console.log(times);
         return times;
     };
 
@@ -53,8 +60,8 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
 
 
     for (let i = 0; i < new_times.length; i++) {
-            console.log(new_times[i]);
-        
+        console.log(new_times[i]);
+
         $(document).ready(function () {
             $('ul.hidden-radio input:radio').each(function () {
                 if ($(this).attr('value') == new_times[i]) {
