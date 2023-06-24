@@ -67,3 +67,9 @@ def booking(request):
                                               'booked_slots':
                                               json.dumps(booked_slots),
                                               "booked_date": booked_date})
+
+
+def view_bookings(request):
+    bookings = BookingTimes.objects.filter(owner=request.user)
+
+    return render(request, 'memberzone/view_bookings.html', {'bookings': bookings})
