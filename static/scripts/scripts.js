@@ -58,3 +58,13 @@ $(document).ready(function () {
     $("#id_number_players").css("width", "auto");
 });
 
+
+$(document).ready(function () {
+
+    // function hide non change fields in form
+
+    if ($("#amend_booking_title").text() == "Amend Your Booking") {
+        $("label[for='id_booking_time_0']").addClass("d-none")
+        $("#id_booking_time").addClass("d-none")
+    } 
+});

@@ -1,0 +1,43 @@
+{% extends "general/base.html" %}
+{% load static %}
+{% block title %} Woodland Heath Golf Club - Member Zone {% endblock %}
+
+{% block content %}
+
+<div>
+    <img id="background-img" src="{% static 'images/golfcourse-1.jpg' %}" class="d-block w-100 min-vh-100 landing_img"
+        alt="Golf Course Fairway" />
+</div>
+
+<div class="padding-25 row justify-content-center">
+    <form action="" method="POST"
+        class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
+        {% csrf_token %}
+        <div class="text-center">
+            <h1 id="amend_booking_title">Amend Your Booking</h1>
+            <br>
+        </div>
+
+        <p>Booking Date: {{ booking.booking_date }}</p>
+        <p>Booking Time: {{ booking.booking_time }}</p>
+        <p>Total Players: {{ booking.number_players }}</p>
+
+
+        <p>Please select new total players for booking:</p>
+        <br>
+        <br>
+        {{ form }}
+
+
+        <div id="booking_submit" class="padding-25 text-center">
+            <button type="submit" class="btn btn-secondary">Amend Booking</button>
+        </div>
+
+
+        <div id="error_container" class="d-none padding-25 text-center">
+            <p id="date_error"></p>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

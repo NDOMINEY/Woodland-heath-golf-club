@@ -23,6 +23,7 @@
                 <th>Booking <br>Date</th>
                 <th>Booking <br>Time</th>
                 <th>Number of <br>Players</th>
+                <th>Change Number <br>of Players</th>
                 <th>Cancel <br>Booking</th>
             </tr>
             {% for booking in bookings %}
@@ -30,6 +31,7 @@
                 <td>{{booking.booking_date}}</td>
                 <td>{{booking.booking_time}}</td>
                 <td>{{booking.number_players}}</td>
+                <td><a href='edit_booking/{{booking.id}}'>Edit Players</a></td>
                 <td><a href='delete_bookings/{{booking.id}}'>Cancel Booking</a></td>
             </tr>
             {% empty %}

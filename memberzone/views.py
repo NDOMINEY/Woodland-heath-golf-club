@@ -80,3 +80,17 @@ def delete_bookings(request, booking_id):
     booking.delete()
 
     return redirect('view_bookings')
+
+
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(BookingTimes, id=booking_id)
+
+    if request.method == 'POST':
+        form = MakeBooking(request.POST, instance=booking)
+        if form.is_valid:
+            form.save()
+            return redirect('view_bookings')
+
+    form = MakeBooking(instance=booking)
+
+    return render(request, 'memberzone/edit_booking.html', {'form': form, 'booking': booking})
