@@ -8,6 +8,11 @@ import json
 
 # Create your views here.
 
+def memberzone(request):
+    user_name = request.user.first_name
+
+    return render(request, 'memberzone/memberzone.html', {'username': user_name})
+
 
 def select_bookingdate(request):
     if request.method == "POST":

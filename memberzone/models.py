@@ -38,7 +38,7 @@ class BookingTimes(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     number_players = models.IntegerField(blank=False,
                                          default=1, choices=[
-                                            (0, 0), (1, 1), (2, 2), 
+                                            (0, 0), (1, 1), (2, 2),
                                             (3, 3), (4, 4)
                                          ])
 

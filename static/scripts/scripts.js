@@ -8,6 +8,8 @@ $(document).ready(function () {
         $("#login").addClass("active");
     } else if ($(document).attr('title') == "Woodland Heath Golf Club - Register") {
         $("#register").addClass("active");
+    } else if ($(document).attr('title') == "Woodland Heath Golf Club - Member Zone") {
+        $("#memberzone").addClass("active");
     }
 });
 
