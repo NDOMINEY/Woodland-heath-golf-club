@@ -93,3 +93,9 @@ ul.hidden-radio>li.pressed {
 #id_number_players {
     font-weight: 600;
 }
+
+/* Member Zone styling */
+
+.member-btn {
+    margin: 15px;
+}

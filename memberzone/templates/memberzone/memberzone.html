@@ -28,13 +28,20 @@ Woodland Heath Golf Club - Member Zone
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         <div class="text-center">
             <h1>Hello, {{ username }}!</h1>
-            <br />
-            <p>Please see below </p>
-
+            <br>
+            <br>
+            <span><i class="fa-solid fa-golf-ball-tee fa-lg"></i></span>
         </div>
 
-        <a class="btn btn-secondary" href="{% url 'booking_date' %} ">Make a Booking</a>
-        <a class="btn btn-secondary" href="">View and Edit Bookings</a>
+        <a class="member-btn btn btn-secondary" href="{% url 'booking_date' %} ">Make a Booking</a>
+        <div class="text-center">
+            <i class="fa-solid fa-golf-ball-tee fa-lg"></i>
+        </div>
+        <a class="member-btn btn btn-secondary" href="">View and Edit Bookings</a>
+        <div class="text-center">
+            <i class="fa-solid fa-golf-ball-tee fa-lg"></i>
+        </div>
+
     </div>
 </div>
 
