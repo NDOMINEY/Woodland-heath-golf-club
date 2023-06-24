@@ -13,7 +13,7 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
         <div class="text-center">
             <h1>Book a tee time!</h1>
             <br />
-            <p>Date Selected: {{ booked_date }}</p>
+            <p id="booking_date">Date Selected: {{ booked_date }}</p>
 
         </div>
 
@@ -23,8 +23,8 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
             <button type="submit" class="btn btn-secondary">Book Time</button>
         </div>
 
-        <div>
-            <a href = "{% url 'booking_date' %} "><h6>Choose Another Date</h6></a>
+        <div class="text-center">
+            <a class="btn btn-secondary" href = "{% url 'booking_date' %} ">Choose Another Date</a>
         </div>
 
         <div id="error_container" class="d-none padding-25 text-center">
@@ -78,7 +78,5 @@ Heath Golf Club - Book a Tee Time {% endblock %} {% block content %}
     });
 
 </script>
-
-<p id="test"></p>
 
 {% endblock %}

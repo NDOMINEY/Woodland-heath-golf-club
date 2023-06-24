@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    // function to add active page class to nav bar
+
     if ($(document).attr('title') == "Woodland Heath Golf Club") {
         $("#home").addClass("active");
     } else if ($(document).attr('title') == "Woodland Heath Golf Club - Login") {
@@ -18,6 +20,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    // validation for user date selection to progress to next part of booking
+
     let date = $("#id_booking_date").val();
 
     $('#id_booking_date').change(function () {
@@ -42,3 +46,13 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    // add classes to style label elements of form
+    
+    $("label[for='id_booking_time_0']").css("margin-bottom", "5px");
+    $("label[for='id_number_players']").css("display", "flex");
+    $("label[for='id_number_players']").css("width", "auto");
+    $("#id_number_players").css("width", "auto");
+});
+

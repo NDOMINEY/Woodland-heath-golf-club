@@ -37,12 +37,10 @@ class BookingTimes(models.Model):
         choices=TIME_SLOTS, blank=False, max_length=5)
     created_on = models.DateTimeField(auto_now_add=True)
     number_players = models.IntegerField(blank=False,
-                                         default=1,
-                                         validators=[
-                                             MaxValueValidator(4),
-                                             MinValueValidator(1)
-                                         ]
-                                         )
+                                         default=1, choices=[
+                                            (0, 0), (1, 1), (2, 2), 
+                                            (3, 3), (4, 4)
+                                         ])
 
     def __str__(self):
         return f"{self.booking_time}"
