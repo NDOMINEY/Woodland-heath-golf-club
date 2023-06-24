@@ -70,7 +70,8 @@ def booking(request):
 
 
 def view_bookings(request):
-    bookings = BookingTimes.objects.filter(owner=request.user)
+    bookings = BookingTimes.objects.filter(
+        owner=request.user).order_by('booking_date')
 
     return render(request, 'memberzone/view_bookings.html', {'bookings': bookings})
 

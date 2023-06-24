@@ -9,4 +9,5 @@ class BookingAdmin(admin.ModelAdmin):
                     "booking_time", "number_players")
 
 
+
 admin.site.register(BookingTimes, BookingAdmin)
