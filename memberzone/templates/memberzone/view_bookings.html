@@ -10,7 +10,42 @@
 </div>
 
 <div class="padding-25 row justify-content-center">
+    <div
+        class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
+        <div class="text-center">
+            <h1>Current Bookings</h1>
+            <br>
+            <br>
+        </div>
 
+        <table>
+            <tr>
+                <th>Booking Date</th>
+                <th>Booking Time</th>
+                <th>Number of Players</th>
+            </tr>
+            {% for booking in bookings %}
+            <tr>
+                <td>{{booking.booking_date}}</td>
+                <td>{{booking.booking_time}}</td>
+                <td>{{booking.number_players}}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td>You have no booked tee times!</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <div class="text-center">
+            <br>
+            <br>
+            <i class="fa-solid fa-golf-ball-tee fa-lg"></i>
+        </div>
+        <a class="member-btn btn btn-secondary" href="{% url 'memberzone' %}">
+            Back to Member Zone Page</a>
+
+    </div>
 </div>
 
 {% endblock %}
