@@ -1,5 +1,4 @@
-from django.shortcuts import render 
-from
+from django.shortcuts import render
 
 # Create your views here.
 
@@ -11,4 +10,4 @@ def home_view(request):
 def contact_us(request):
     user = request.user
 
-    return render(request, 'general/contact_us.html', {'user', user})
+    return render(request, 'general/contact_us.html', {'user': user})
