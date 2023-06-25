@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def home_view(request):
     return render(request, 'general/home.html')
+
+
+def contact_us(request):
+    return render(request, 'general/contact_us.html')

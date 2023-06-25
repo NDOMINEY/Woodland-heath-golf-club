@@ -47,7 +47,7 @@ def booking(request):
 
             messages.success(request, (f'You have sucessfully booked a tee \
                 time for {booked_date} at {time} for {players} players.'))
-            return redirect('home')
+            return redirect('memberzone')
     else:
         form = MakeBooking()
 

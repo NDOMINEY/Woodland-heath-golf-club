@@ -10,6 +10,8 @@ $(document).ready(function () {
         $("#register").addClass("active");
     } else if ($(document).attr('title') == "Woodland Heath Golf Club - Member Zone") {
         $("#memberzone").addClass("active");
+    } else if ($(document).attr('title') == "Woodland Heath Golf Club - Contact Us") {
+        $("#contact").addClass("active");
     }
 });
 
