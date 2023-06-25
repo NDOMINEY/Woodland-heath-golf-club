@@ -11,7 +11,8 @@ import json
 def memberzone(request):
     user_name = request.user.first_name
 
-    return render(request, 'memberzone/memberzone.html', {'username': user_name})
+    return render(request, 'memberzone/memberzone.html', {'username':
+                                                          user_name})
 
 
 def select_bookingdate(request):
@@ -95,4 +96,5 @@ def edit_booking(request, booking_id):
 
     form = ChangeBooking(instance=booking)
 
-    return render(request, 'memberzone/edit_booking.html', {'form': form, 'booking': booking})
+    return render(request, 'memberzone/edit_booking.html', {'form': form,
+                                                            'booking': booking})
