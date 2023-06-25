@@ -73,7 +73,8 @@ def view_bookings(request):
     bookings = BookingTimes.objects.filter(
         owner=request.user).order_by('booking_date')
 
-    return render(request, 'memberzone/view_bookings.html', {'bookings': bookings})
+    return render(request, 'memberzone/view_bookings.html', {'bookings':
+                                                             bookings})
 
 
 def delete_bookings(request, booking_id):

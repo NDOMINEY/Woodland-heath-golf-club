@@ -7,10 +7,14 @@ Woodland Heath Golf Club - Contact Us
 
 {% block content %}
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="{% static 'scripts/send_email.js' %}"></script>
+
 <div>
     <img id="background-img" src="{% static 'images/golfcourse-1.jpg' %}" class="d-block w-100 min-vh-100 landing_img"
         alt="Golf Course Fairway" />
-</div>
+</div>;
 
 {% if messages %}
 {% for message in messages %}
@@ -18,7 +22,7 @@ Woodland Heath Golf Club - Contact Us
 <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
     <p>{{ message }}</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+</div>;
 {% endfor %}
 {% endif %}
 
@@ -36,24 +40,26 @@ Woodland Heath Golf Club - Contact Us
             <div class="text-center">
                 <h4>Online Enquiry</h4>
             </div>
-            <form action="" method="POST">
+            <form id="contact-form" method="POST">
                 {% csrf_token %}
 
                 <div class="mb-3">
                     <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="first_name" value="{{user.first_name}}" required>
+                    <input type="text" class="form-control" id="first_name" name="first_name"
+                        value="{{user.first_name}}" required>
                 </div>
                 <div class="mb-3">
                     <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="last_name" value="{{user.last_name}}" required>
+                    <input type="text" class="form-control" id="last_name" name="last_name" value="{{user.last_name}}"
+                        required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" value="{{user.email}}" required>
+                    <input type="email" class="form-control" id="email" name="email" value="{{user.email}}" required>
                 </div>
                 <div class="mb-6">
                     <span class="message">Message</span>
-                    <textarea class="form-control" aria-label="message" required></textarea>
+                    <textarea class="form-control" name="message" aria-label="message" required></textarea>
                 </div>
 
                 <div id="booking_submit" class="text-center">
@@ -78,4 +84,4 @@ Woodland Heath Golf Club - Contact Us
 
     </div>
 
-    {% endblock %}
+    {% endblock %};
