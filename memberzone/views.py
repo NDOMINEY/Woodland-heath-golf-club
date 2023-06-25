@@ -81,6 +81,7 @@ def view_bookings(request):
 def delete_bookings(request, booking_id):
     booking = get_object_or_404(BookingTimes, id=booking_id)
     booking.delete()
+    messages.success(request, ("Booking sucessfully cancelled."))
 
     return redirect('view_bookings')
 
