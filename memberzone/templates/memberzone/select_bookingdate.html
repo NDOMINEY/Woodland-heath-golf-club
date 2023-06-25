@@ -1,6 +1,6 @@
 {% extends "general/base.html" %}
-{% load static %} 
-{% block title %} Woodland Heath Golf Club - Member Zone {% endblock %} 
+{% load static %}
+{% block title %} Woodland Heath Golf Club - Member Zone {% endblock %}
 
 {% block content %}
 
@@ -21,12 +21,18 @@
         </div>
         {{ form }}
 
-        <div id="booking_submit" class="padding-25 text-center">
-            <button type="submit" class="btn btn-secondary">View Available Times -></button>
-        </div>
         <div id="error_container" class="d-none padding-25 text-center">
             <p id="date_error"></p>
         </div>
+
+
+        <div id="booking_submit" class="text-center">
+            <button type="submit" class="member-btn btn btn-secondary">View Available Times -></button>
+        </div>
+        <div class="text-center">
+            <a class="member-btn btn btn-secondary" href="{% url 'view_bookings' %} ">Back to View Bookings</a>
+        </div>
+
     </form>
 </div>
 

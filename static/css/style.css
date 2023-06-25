@@ -97,14 +97,14 @@ ul.hidden-radio>li.pressed {
 /* Member Zone styling */
 
 .member-btn {
-    margin: 15px;
+    margin: 15px 0px;
+    width: 100%;
 }
 
 /* Booking Display styling */
 
 .booking-display {
-    border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ffffff;
     padding: 10px;
     margin: 10px;
