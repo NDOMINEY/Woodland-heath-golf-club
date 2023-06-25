@@ -34,7 +34,7 @@ $(document).ready(function () {
         if (newdate < date) {
             $("ul.hidden-radio").addClass("d-none");
             $("#error_container").removeClass("d-none");
-            $("#date_error").text("Please select date from tomorrow onwards...");
+            $("#date_error").text("Please select date from tomorrow onwards. If you would like to enquire about a booking for today, please call out Pro Shop on 01234 123123.");
             $("label[for='id_booking_time_0']").addClass("d-none");
             $("label[for='id_number_players']").addClass("d-none");
             $("#id_number_players").addClass("d-none");
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     // add classes to style label elements of form
-    
+
     $("label[for='id_booking_time_0']").css("margin-bottom", "5px");
     $("label[for='id_number_players']").css("display", "flex");
     $("label[for='id_number_players']").css("width", "auto");
@@ -66,7 +66,7 @@ $(document).ready(function () {
     // function hide non change fields in form
 
     if ($("#amend_booking_title").text() == "Amend Your Booking") {
-        $("label[for='id_booking_time_0']").addClass("d-none")
-        $("#id_booking_time").addClass("d-none")
-    } 
+        $("label[for='id_booking_time_0']").addClass("d-none");
+        $("#id_booking_time").addClass("d-none");
+    }
 });
