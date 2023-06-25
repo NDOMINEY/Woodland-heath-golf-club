@@ -107,7 +107,7 @@ ul.hidden-radio>li.pressed {
     width: 100%;
 }
 
-.active-btn:hover {
+.active-btn:hover, .active-btn-small:hover {
     background-color: #577a06;
 }
 
@@ -115,6 +115,16 @@ ul.hidden-radio>li.pressed {
     background-color: #6c757d;
     margin: 15px 0px;
     width: 100%;
+}
+
+.active-btn-small {
+    background-color: #6c9807;
+    margin: 15px 0px;
+}
+
+.back-btn-small {
+    background-color: #6c757d;
+    margin: 15px 0px;
 }
 
 /* Booking Display styling */

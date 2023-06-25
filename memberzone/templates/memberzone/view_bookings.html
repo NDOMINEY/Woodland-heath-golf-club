@@ -25,9 +25,37 @@
                 <p class="booking-info">Date of Booking: {{booking.booking_date}}</p><br>
                 <p class="booking-info">Time of Booking: {{booking.booking_time}}</p><br>
                 <p class="booking-info">Number of Players: {{booking.number_players}}</p><br><br>
-                <p class="booking-info"><a href='edit_booking/{{booking.id}}'>Edit Players</a></p>
-                <p class="booking-info"><a href='delete_bookings/{{booking.id}}'>Cancel Booking</a></p>
+                <a class="active-btn-small btn btn-secondary" href="edit_booking/{{booking.id}}">Edit Players
+                </a>
+
+                <button type="button" class="active-btn-small btn btn-secondary" data-bs-toggle="modal" data-bs-target="#{{booking.id}}">
+                    Cancel Booking
+                </button>
             </div>
+
+
+            <!-- Modal template from bootstrap-->
+            <div class="modal fade" id="{{booking.id}}" tabindex="-1" aria-labelledby="CancelBooking" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Cancel Booking</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you would like to cancel your booking for {{booking.booking_date}} at {{booking.booking_time}}?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="back-btn-small btn btn-secondary" data-bs-dismiss="modal">Back to Bookings</button>
+                            <a href="delete_bookings/{{booking.id}}">
+                                <button type="button" class="active-btn-small btn btn btn-secondary">Cancel Booking</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
             {% empty %}
             <div class="text-center">
                 <p>You have no booked tee times!</p>
@@ -45,5 +73,7 @@
 
     </div>
 </div>
+
+
 
 {% endblock %}
