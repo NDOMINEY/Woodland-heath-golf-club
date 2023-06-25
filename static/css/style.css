@@ -44,10 +44,15 @@
 }
 
 
-/* Button styling for forms */
+/* Container styling */
 
 .padding-25 {
     padding: 25px;
+}
+
+.margin-25px {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* Booking Form Styling */
@@ -96,7 +101,18 @@ ul.hidden-radio>li.pressed {
 
 /* Member Zone styling */
 
-.member-btn {
+.active-btn {
+    background-color: #6c9807;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.active-btn:hover {
+    background-color: #577a06;
+}
+
+.back-btn {
+    background-color: #6c757d;
     margin: 15px 0px;
     width: 100%;
 }
