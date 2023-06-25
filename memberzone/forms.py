@@ -35,3 +35,18 @@ class MakeBooking(ModelForm):
             field = self.fields.get(field_name)
             if field and isinstance(field, forms.TypedChoiceField):
                 field.choices = field.choices[1:]
+
+
+class ChangeBooking(ModelForm):
+
+    class Meta:
+        model = BookingTimes
+        fields = ('number_players',)
+
+    def __init__(self, *args, **kwargs):
+        super(ChangeBooking, self).__init__(*args, **kwargs)
+
+        for field_name in self.fields:
+            field = self.fields.get(field_name)
+            if field and isinstance(field, forms.TypedChoiceField):
+                field.choices = field.choices[1:]

@@ -18,28 +18,22 @@
             <br>
         </div>
 
-        <table>
-            <tr>
-                <th>Booking <br>Date</th>
-                <th>Booking <br>Time</th>
-                <th>Number of <br>Players</th>
-                <th>Change Number <br>of Players</th>
-                <th>Cancel <br>Booking</th>
-            </tr>
+        <div>
+
             {% for booking in bookings %}
-            <tr>
-                <td>{{booking.booking_date}}</td>
-                <td>{{booking.booking_time}}</td>
-                <td>{{booking.number_players}}</td>
-                <td><a href='edit_booking/{{booking.id}}'>Edit Players</a></td>
-                <td><a href='delete_bookings/{{booking.id}}'>Cancel Booking</a></td>
-            </tr>
+            <div class="booking-display text-center">
+                <p class="booking-info">Date of Booking: {{booking.booking_date}}</p><br>
+                <p class="booking-info">Time of Booking: {{booking.booking_time}}</p><br>
+                <p class="booking-info">Number of Players: {{booking.number_players}}</p><br><br>
+                <p class="booking-info"><a href='edit_booking/{{booking.id}}'>Edit Players</a></p>
+                <p class="booking-info"><a href='delete_bookings/{{booking.id}}'>Cancel Booking</a></p>
+            </div>
             {% empty %}
-            <tr>
-                <td>You have no booked tee times!</td>
-            </tr>
+            <div class="text-center">
+                <p>You have no booked tee times!</p>
+            </div>
             {% endfor %}
-        </table>
+        </div>
 
         <div class="text-center">
             <br>

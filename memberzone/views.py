@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from datetime import datetime
-from . forms import MakeBooking, SelectBookingDate
+from . forms import MakeBooking, SelectBookingDate, ChangeBooking
 from . models import BookingTimes
 import json
 
@@ -87,11 +87,11 @@ def edit_booking(request, booking_id):
     booking = get_object_or_404(BookingTimes, id=booking_id)
 
     if request.method == 'POST':
-        form = MakeBooking(request.POST, instance=booking)
+        form = ChangeBooking(request.POST, instance=booking)
         if form.is_valid:
             form.save()
             return redirect('view_bookings')
 
-    form = MakeBooking(instance=booking)
+    form = ChangeBooking(instance=booking)
 
     return render(request, 'memberzone/edit_booking.html', {'form': form, 'booking': booking})
