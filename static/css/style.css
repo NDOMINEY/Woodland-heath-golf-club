@@ -1,6 +1,6 @@
 /* Navbar custom styling */
 
-#navbar {
+.navbar-style {
     z-index: 1;
     background-color: #FFFFFF !important;
     /* To override !important user is Bootstrap */
