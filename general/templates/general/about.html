@@ -6,41 +6,50 @@ Woodland Heath Golf Club - About
 {% endblock %}
 
 {% block content %}
+<div>
+    <img id="background-img" src="{% static 'images/golfcourse-1.jpg' %}" class="d-block w-100 min-vh-100 landing_img"
+        alt="Golf Course Fairway" />
+</div>
 
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-    </div>
+<div
+    class="container-sm rounded-top-4 rounded-bottom-4 padding-25 margin-25px bg-light text-dark bg-opacity-75 justify-content-center text-center">
 
-    <h4>At Woodland Heath Golf Club we have a wide range of facilities for use!</h4>
+    <h4 class="padding-25">Facilities at Woodland Heath!</h4>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{% static 'images/facilities-1.jpg' %}" class="d-block w-100" alt="Golf Buggies">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-1.jpg' %}" class="facility-img" alt="Golf Buggies">
+            <p class="text">Hire Golf Buggies</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-2.jpg' %}" class="facility-img" alt="Driving Range">
+            <p class="text">Driving Range</p>
+        </div>
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-3.jpg' %}" class="facility-img" alt="Practice Putting Greens">
+            <p class="text">Practice Greens</p>
+        </div>
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-4.jpg' %}" class="facility-img" alt="Pro Lessons">
+            <p class="text">Pro Lessons</p>
+        </div>
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-5.jpg' %}" class="facility-img" alt="Pro Shop">
+            <p class="text">Pro Shop</p>
+        </div>
+        <div class="col img-holder">
+            <img src="{% static 'images/facilities-6.jpg' %}" class="facility-img" alt="Mini Golf">
+            <p class="text">Mini Golf</p>
+        </div>
+
+
+
+
+
     </div>
 
-    {% endblock %}
+</div>
+
+
+
+{% endblock %}

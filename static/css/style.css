@@ -107,7 +107,8 @@ ul.hidden-radio>li.pressed {
     width: 100%;
 }
 
-.active-btn:hover, .active-btn-small:hover {
+.active-btn:hover,
+.active-btn-small:hover {
     background-color: #577a06;
 }
 
@@ -144,4 +145,31 @@ ul.hidden-radio>li.pressed {
 
 .text-spacing {
     margin-bottom: 0px;
+}
+
+/*  About page styling */
+
+
+.img-holder {
+    position: relative;
+}
+
+.facility-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    opacity: 0.9;
+    margin: 5px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #577a06;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+
 }
