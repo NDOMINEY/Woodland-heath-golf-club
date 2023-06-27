@@ -36,7 +36,7 @@ $(document).ready(function () {
         if (newdate < date) {
             $("ul.hidden-radio").addClass("d-none");
             $("#error_container").removeClass("d-none");
-            $("#date_error").text("Please select date from tomorrow onwards. If you would like to enquire about a booking for today, please call out Pro Shop on 01234 123123.");
+            $("#date_error").text("Please select a date from tomorrow onwards. If you would like to enquire about a booking for today, please call our Pro Shop on 01234 123123.");
             $("label[for='id_booking_time_0']").addClass("d-none");
             $("label[for='id_number_players']").addClass("d-none");
             $("#id_number_players").addClass("d-none");
