@@ -12,6 +12,8 @@ $(document).ready(function () {
         $("#memberzone").addClass("active");
     } else if ($(document).attr('title') == "Woodland Heath Golf Club - Contact Us") {
         $("#contact").addClass("active");
+    } else if ($(document).attr('title') == "Woodland Heath Golf Club - About") {
+        $("#about").addClass("active");
     }
 });
 
