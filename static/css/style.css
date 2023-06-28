@@ -41,6 +41,18 @@ footer {
     margin-top: auto;
 }
 
+/* center footer for smaller screen sized */
+@media only screen and (max-width: 459px) {
+    #small-screen-center {
+        text-align: center;
+    }
+
+    #container-center {
+        justify-content: center;
+    }
+}
+
+
 /* Home Page */
 
 .landing_img {
