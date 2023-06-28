@@ -9,7 +9,8 @@
         alt="Golf Course Fairway" />
 </div>
 
-<div class="padding-25 row justify-content-center">
+<!-- display form for user to select booking time and players -->
+<section class="padding-25 row justify-content-center">
     <form action="" method="POST"
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         {% csrf_token %}
@@ -22,6 +23,7 @@
 
         {{ form }}
 
+        <!-- action buttons -->
         <div id="booking_submit" class="text-center">
             <button type="submit" class="active-btn btn btn-secondary">Book Time</button>
         </div>
@@ -34,15 +36,19 @@
             <p id="date_error"></p>
         </div>
     </form>
-</div>
+</section>
 
+<!-- script in html due to contect used from view -->
 <script>
     let slots = "{{ booked_slots }}";
     var newslots = slots.split(',');
 
     let new_times = newslots.map(getTime);
 
+
     function getTime(slot) {
+        //  function to create comparable data to form time labels
+        //  and add approptiate class to matching times for the day
         console.log(slot);
         let timeArray = new Array();
 
