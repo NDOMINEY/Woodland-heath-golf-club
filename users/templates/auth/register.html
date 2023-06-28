@@ -12,7 +12,9 @@ Woodland Heath Golf Club - Register
         alt="Golf Course Fairway">
 </div>
 
-<div class="padding-25 row justify-content-center ">
+<section class="padding-25 row justify-content-center ">
+
+    <!-- Registration form for new user -->
     <form action="" method="POST"
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         {% csrf_token %}
@@ -26,6 +28,6 @@ Woodland Heath Golf Club - Register
             <button type="submit" class="active-btn btn btn-secondary">Let's go!</button>
         </div>
     </form>
-</div>
+</section>
 
 {% endblock %}
