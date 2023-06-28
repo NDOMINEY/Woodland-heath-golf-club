@@ -9,7 +9,8 @@
         alt="Golf Course Fairway" />
 </div>
 
-<div class="padding-25 row justify-content-center">
+<!-- displays form for user to amend players on booking -->
+<section class="padding-25 row justify-content-center">
     <form action="" method="POST"
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         {% csrf_token %}
@@ -44,6 +45,6 @@
             <p id="date_error"></p>
         </div>
     </form>
-</div>
+</section>
 
 {% endblock %}
