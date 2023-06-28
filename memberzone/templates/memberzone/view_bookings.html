@@ -9,6 +9,7 @@
         alt="Golf Course Fairway" />
 </div>
 
+<!-- Banner to display messages to user -->
 {% if messages %}
 {% for message in messages %}
 
@@ -20,7 +21,7 @@
 {% endif %}
 
 
-<div class="padding-25 row justify-content-center">
+<section class="padding-25 row justify-content-center">
     <div
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         <div class="text-center">
@@ -31,22 +32,26 @@
 
         <div>
 
+            <!-- for loop to display bookings held by user -->
+
             {% for booking in bookings %}
-            <div class="booking-display text-center">
+            <section class="booking-display text-center">
                 <p class="booking-info">Date of Booking: {{booking.booking_date}}</p><br>
                 <p class="booking-info">Time of Booking: {{booking.booking_time}}</p><br>
                 <p class="booking-info">Number of Players: {{booking.number_players}}</p><br><br>
                 <a class="active-btn-small btn btn-secondary" href="edit_booking/{{booking.id}}">Edit Players
                 </a>
 
-                <button type="button" class="active-btn-small btn btn-secondary" data-bs-toggle="modal" data-bs-target="#{{booking.id}}">
+                <button type="button" class="active-btn-small btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#{{booking.id}}">
                     Cancel Booking
                 </button>
-            </div>
+            </section>
 
 
-            <!-- Modal template from bootstrap-->
-            <div class="modal fade" id="{{booking.id}}" tabindex="-1" aria-labelledby="CancelBooking" aria-hidden="true">
+            <!-- Modal template from bootstrap to confirm booking cancellation -->
+            <section class="modal fade" id="{{booking.id}}" tabindex="-1" aria-labelledby="CancelBooking"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -54,19 +59,23 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are you sure you would like to cancel your booking for {{booking.booking_date}} at {{booking.booking_time}}?</p>
+                            <p>Are you sure you would like to cancel your booking for {{booking.booking_date}} at
+                                {{booking.booking_time}}?</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="back-btn-small btn btn-secondary" data-bs-dismiss="modal">Back to Bookings</button>
+                            <button type="button" class="back-btn-small btn btn-secondary" data-bs-dismiss="modal">Back
+                                to Bookings</button>
                             <a href="delete_bookings/{{booking.id}}">
-                                <button type="button" class="active-btn-small btn btn btn-secondary">Cancel Booking</button>
+                                <button type="button" class="active-btn-small btn btn btn-secondary">Cancel
+                                    Booking</button>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            
+            <!-- content to display if no bookings are held by user -->
+
             {% empty %}
             <div class="text-center">
                 <p>You have no booked tee times!</p>
@@ -83,7 +92,7 @@
             Back to Member Zone Page</a>
 
     </div>
-</div>
+</section>
 
 
 
