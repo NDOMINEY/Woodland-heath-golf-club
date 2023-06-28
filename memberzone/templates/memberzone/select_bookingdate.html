@@ -9,7 +9,8 @@
         alt="Golf Course Fairway" />
 </div>
 
-<div class="padding-25 row justify-content-center">
+<!-- form to select booking date to proceed to view available times -->
+<section class="padding-25 row justify-content-center">
     <form action="" method="POST"
         class="row rounded-top-4 rounded-bottom-4 padding-25 bg-light text-dark bg-opacity-75 col-md-6 col-sm-8 col-10">
         {% csrf_token %}
@@ -21,11 +22,12 @@
         </div>
         {{ form }}
 
+        <!-- display for when incorrect date selected (validated by script.js) -->
         <div id="error_container" class="d-none padding-25 text-center">
             <p id="date_error"></p>
         </div>
 
-
+        <!-- action buttons -->
         <div id="booking_submit" class="text-center">
             <button type="submit" class="active-btn btn btn-secondary">View Available Times -></button>
         </div>
@@ -34,6 +36,6 @@
         </div>
 
     </form>
-</div>
+</section>
 
 {% endblock %}
