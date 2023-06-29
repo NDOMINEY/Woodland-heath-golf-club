@@ -81,6 +81,11 @@ Please see below a table showing the key requirements of the site and their impo
 
 ## Technologies Used
 
+- Whitenoise was used to serve the static files - [Whitenoise](https://whitenoise.readthedocs.io/en/stable/)
+- Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
+- jQuery was used for is dom manipulation in the script files - [jQuery](https://jquery.com/)
+- Elephantsql was used for the sites database - [ElephantSQL](https://customer.elephantsql.com/)
+
 ### Main Languages Used
 
 - Python
