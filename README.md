@@ -85,6 +85,7 @@ Please see below a table showing the key requirements of the site and their impo
 - Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
 - jQuery was used for is dom manipulation in the script files - [jQuery](https://jquery.com/)
 - Elephantsql was used for the sites database - [ElephantSQL](https://customer.elephantsql.com/)
+- EmailJS was used to send online requests to the proshop and an autoreply to the site user - [EmailJS](https://www.emailjs.com/)
 
 ### Main Languages Used
 
@@ -113,13 +114,13 @@ Then name your branch and select the branch source
 
 ### Content
 
+#### EmailJS
+
+Set up for EmailJS was aided by the CodeInstitue tutorials and the EmaiJS suppoting documentation.
+
 #### Django login and registration
 
 Django tutorial videos from Codemy on youtube to help implement the register, login and logout functionality - [Codemy](https://www.youtube.com/@Codemycom/search?query=django%20user)
-
-#### Favicon creation
-
-The following generator was used for the sites favicon - [favicon.io](https://favicon.io/favicon-converter/)
 
 #### Image compression
 
@@ -138,3 +139,15 @@ The following images were sourced from [Pexels](https://www.pexels.com/)
 - [Features - Putting Area](https://www.pexels.com/photo/person-playing-golf-1325661/)
 - [Features - Golf Buggy](https://www.pexels.com/photo/bag-bus-car-cart-274108/)
 - [Features - Practice Range](https://www.pexels.com/photo/person-swinging-golf-club-on-field-1325659/)
+
+#### Logo
+
+The logo was created using [Adobe Express](https://www.adobe.com/express/create/logo/website)
+
+#### Favicon
+
+The following generator was used for the sites favicon - [favicon.io](https://favicon.io/favicon-converter/)
+
+#### Icons
+
+The following was used for icons on the site - [font awesone](https://fontawesome.com/icons/golf-ball-tee?f=classic&s=solid&pc=%23ffffff)
