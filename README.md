@@ -120,6 +120,16 @@ If the user is logged in, this online enquiry form will auto populate their basi
 
 ![Contact page - user auto](documentation/contact-page-user.png)
 
+### User Registration
+
+Within the navigation bar, there is a link to register for a new account. This takes the user to a registration page to complete.
+
+![Registraion](documentation/user-register.png)
+
+Once completed, the user is redirected back to the home page and a success alert is displayed.
+
+![Registraion Success](documentation/register-success.png)
+
 ### Memberzone
 
 When a user sucessfully logs in, they are redirected to the memberzone page. They are greated with welcome message including their name so they know their login was sucessful.
