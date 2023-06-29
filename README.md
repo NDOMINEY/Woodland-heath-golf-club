@@ -24,6 +24,7 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
   - [User Requirement Testing](#user-requirement-testing "User Requirement Testing")
   - [Functional Testing](#functional-testing "Functional Testing")
   - [Validator Testing](#validator-testing "Validator Testing")
+  - [Automated Testing](#automated-testing "Automated Testing")
 - [Technologies Used](#technologies-used "Technologies Used")
   - [Main Languages Used](#main-languages-used "Main Languages Used")
 - [Deployment](#deployment "Deployment")
@@ -306,6 +307,12 @@ HTML validator tests were carried out accross the site.
 #### Python
 
 Through the IDE pep8 compliance was checked to ensure the code was validated
+
+### Automated Testing
+
+Towards the end of my testing I added 1 test within test_models.py to test whether a record could succefully be added to the BookingTimes database, which it passes.
+
+In the future, I would like to spend more time creating extensive tests on the models and views.
 
 # Technologies Used
 
