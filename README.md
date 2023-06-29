@@ -12,6 +12,7 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
 ## Table of Contents
 
 - [Requirements](#requirements "Requirements")
+- [Agile Methods](#agile-methods "Agile Methods")
 - [Design](#design "Design")
   - [Wireframes](#wireframes "Wireframes")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
@@ -45,6 +46,12 @@ Please see below a table showing the key requirements of the site and their impo
 | Enable logged in user to log out                                                    |     5      |           5           |
 | Have a memberzone which provides ability to book a tee time, edit, and delete it    |     5      |           5           |
 | Provide the site user a way to be able to submit an online contact form             |     4      |           5           |
+
+## Agile Methods
+
+Through this object I have taken an agile approach to my development. To do this, I used the github issue and project board to organise my user stories. Please see link below.
+
+[Agile Development - Project Board](https://github.com/users/NDOMINEY/projects/2/views/1)
 
 ## Design
 
