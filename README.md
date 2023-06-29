@@ -212,6 +212,9 @@ If the user continues to cancel the booking, they are returned to the view booki
 
 ### Future Features
 
+- A blog style feature that enables members to share pictures and information about their rounds.
+- An area within the memberzone which enables the user to record, view, and get statistics on their golf rounds.
+
 ## Testing
 
 ### Development Process
