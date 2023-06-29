@@ -284,7 +284,6 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 |  <br>TC-041     |  <br>View, Edit and Cancel Bookings - when the cancel booking pop up appears and the ‘Cancel Booking’ button is clicked the user is redirected back to the view bookings page and confirmation of cancellation is displayed  |  <br>User is logged in and cancel booking button has been clicked                     |  <br>1. Click ‘Cancel Booking’ Button<br> <br><br><br> <br>2. Check user is redirected back to view bookings page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm the booking was cancelled  |  <br>Pass    |
 |  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                              |  <br>User is logged in                                                                |  <br>1. Click ‘Logout’ link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |
 
-
 <br></details>### Validator Testing
 
 ### Unfixed Bugs
