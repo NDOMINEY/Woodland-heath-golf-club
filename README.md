@@ -14,6 +14,7 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
 - [Requirements](#requirements "Requirements")
 - [Agile Methods](#agile-methods "Agile Methods")
 - [Design](#design "Design")
+  - [Database Schema](#database_scheme "Database Schema")
   - [Wireframes](#wireframes "Wireframes")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
 - [Features](#features "Features")
@@ -54,6 +55,13 @@ Through this object I have taken an agile approach to my development. To do this
 [Agile Development - Project Board](https://github.com/users/NDOMINEY/projects/2/views/1)
 
 ## Design
+
+### Database Schema
+
+To be able to create an online booking system a PostgreSQL database was implemented to hold user information and booking information. The User model was used from the pre-built one supplied by Django. <br>
+For the booking details, a custom model was created that was relational to the existing user model. Please see below the database diagram.
+
+[Database Diagram](hdocumentation/db-diagram.png)
 
 ### Wireframes:
 
