@@ -1,39 +1,94 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Woodland Heath Golf Club
 
-Welcome,
+Woodland Heath Golf Club, is a golf club based in norfolk. The purpose of this site is to be able to provide information to future customers and also a booking system for members to be able to book tee times online.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The targetted audience is all who have a love of golf and also family and friend time.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+Live Site - [Woodland Health Golf Club](https://woodland-health-golf-club.herokuapp.com/) <br>
+Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/NDOMINEY/Woodland-heath-golf-club)
 
-## Codeanywhere Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- [Requirements](#requirements "Requirements")
+- [Design](#design "Design")
+  - [Wireframes](#wireframes "Wireframes")
+  - [Colour Scheme](#colour-scheme "Colour Scheme")
+- [Features](#features "Features")
 
-`python3 -m http.server`
+  - [Existing Features](#existing-features "Existing Features")
+  - [Future Features](#future-features "Future Features")
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- [Testing](#testing "Testing")
+  - [Development Process](#development-process "Development Process")
+  - [Usability Testing](#usability-testing "Usability Testing")
+  - [User Requirement Testing](#user-requirement-testing "User Requirement Testing")
+  - [Functional Testing](#functional-testing "Functional Testing")
+  - [Validator Testing](#validator-testing "Validator Testing")
+  - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
+- [Technologies Used](#technologies-used "Technologies Used")
+  - [Main Languages Used](#main-languages-used "Main Languages Used")
+- [Deployment](#deployment "Deployment")
+- [Credits](#credits "Credits")
+  - [Content](#content "Content")
+  - [Media](#media "Media")
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Requirements
 
-`http_server`
+## Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Flow Diagram:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Wireframes:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Colour Scheme:
 
-To log into the Heroku toolbelt CLI:
+## Features
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Existing Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Introduction
 
----
+### Future Features
 
-Happy coding!
+## Testing
+
+### Development Process
+
+### Usability Testing
+
+### User Requirement Testing
+
+### Functional Testing
+
+### Validator Testing
+
+### Unfixed Bugs
+
+## Technologies Used
+
+### Main Languages Used
+
+- Python
+- Javascript
+- HTML5
+- CSS3
+
+## Deployment
+
+#### Future development
+
+To carry out further development on the project you can clone the repository locally. This is completed by carrying out the following steps -
+
+Within your repository, make sure you are on the 'Code' tab
+Click on the button that shows '<> Code'
+Then select how you wish to clone
+To create an isolated version of the project, you may add a branch off of main. To do this follow the below steps -
+
+Whilst in the code section, click on 'branch'
+You will then see a breakdown of the exisiting branches
+To add a new branch, click 'New Branch' which is a green button
+Then name your branch and select the branch source
+
+## Credits
+
+### insert credits
