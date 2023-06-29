@@ -128,14 +128,14 @@ ul.hidden-radio>li.pressed {
 /* Member Zone styling */
 
 .active-btn {
-    background-color: #6c9807;
+    background-color: #415F07;
     margin: 15px 0px;
     width: 100%;
 }
 
 .active-btn:hover,
 .active-btn-small:hover {
-    background-color: #577a06;
+    background-color: #385007;
 }
 
 .back-btn {
@@ -145,7 +145,7 @@ ul.hidden-radio>li.pressed {
 }
 
 .active-btn-small {
-    background-color: #6c9807;
+    background-color: #415F07;
     margin: 15px 0px;
 }
 

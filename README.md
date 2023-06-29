@@ -24,7 +24,6 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
   - [User Requirement Testing](#user-requirement-testing "User Requirement Testing")
   - [Functional Testing](#functional-testing "Functional Testing")
   - [Validator Testing](#validator-testing "Validator Testing")
-  - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Technologies Used](#technologies-used "Technologies Used")
   - [Main Languages Used](#main-languages-used "Main Languages Used")
 - [Deployment](#deployment "Deployment")
@@ -284,10 +283,11 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 |  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                            |  <br>User is logged in                                                                |  <br>1. Click Logout link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |  <br>          ||  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                              |  <br>User is logged in                                                                |  <br>1. Click ‘Logout’ link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |
 
 
-<br><br></details>### Validator Testing
-### Validator Testing### Unfixed Bugs
 
-## Technologies Used
+
+
+
+Validator Testing## TValidator TestsUsed
 
 - Whitenoise was used to serve the static files - [Whitenoise](https://whitenoise.readthedocs.io/en/stable/)
 - Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
