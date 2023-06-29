@@ -116,7 +116,7 @@ Additionally, for ease of submitting an enquiry the user is able to complete a c
 
 ![Contact page](documentation/contact-page.png)
 
-If the user is logged in, this online enquiry form will auto populate their basic deals for ease of use.
+If the user is logged in, this online enquiry form will auto populate their basic details for ease of use.
 
 ![Contact page - user auto](documentation/contact-page-user.png)
 
