@@ -17,17 +17,19 @@ for hour in hours:
 
 
 def next_day():
+    """ function to return next day date value for default model field """
     return date.today() + timedelta(days=1)
 
 
 class BookingDate(models.Model):
-
+    """ holds booking date for form """
     booking_date = models.DateField(default=next_day,
                                     validators=[MinValueValidator(next_day)],
                                     null=False, blank=False)
 
 
 class BookingTimes(models.Model):
+    """ model for booking information """
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     booking_date = models.DateField(default=next_day,
@@ -38,8 +40,8 @@ class BookingTimes(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     number_players = models.IntegerField(blank=False,
                                          default=1, choices=[
-                                            (0, 0), (1, 1), (2, 2),
-                                            (3, 3), (4, 4)
+                                             (0, 0), (1, 1), (2, 2),
+                                             (3, 3), (4, 4)
                                          ])
 
     def __str__(self):

@@ -5,6 +5,7 @@ from . models import BookingTimes, BookingDate
 
 
 class SelectBookingDate(ModelForm):
+    """ form for selecting booking date """
 
     class Meta:
         model = BookingDate
@@ -16,6 +17,7 @@ class SelectBookingDate(ModelForm):
 
 
 class MakeBooking(ModelForm):
+    """ form for submitting booking records """
 
     class Meta:
         model = BookingTimes
@@ -38,6 +40,8 @@ class MakeBooking(ModelForm):
 
 
 class ChangeBooking(ModelForm):
+        """ form for selecting booking date """
+
 
     class Meta:
         model = BookingTimes
