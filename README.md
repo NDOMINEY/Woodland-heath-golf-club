@@ -91,6 +91,18 @@ In addition to the navigation bar, on the bottom on every page is a footer. This
 
 ![Footer](documentation/footer.png)
 
+### Home Page/Landing Page
+
+When you first access the site, you are directed to the home page. This has a bold welcome statement so the user can verify the site they have visited quickly.
+
+There is a summary of the course, club house and membership for quick information. For a user that is not logged in, it presents them with the following buttons which sign posts them to key areas of the site.
+
+- 'Check out our facilities'
+- 'Register to make a booking'
+- 'Login in you already have an account'
+
+![Home page](documentation/home-page-new-user.png)
+
 ### Future Features
 
 ## Testing
