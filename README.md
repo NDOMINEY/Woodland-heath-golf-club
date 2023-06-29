@@ -130,6 +130,12 @@ Once completed, the user is redirected back to the home page and a success alert
 
 ![Registraion Success](documentation/register-success.png)
 
+### User Login
+
+Within the navigation bar, there is a link to login for users who already have an account. This takes the user to a login page. Upon sucessful login, the user is directed to the memberzone page.
+
+![Login](documentation/login.png)
+
 ### Memberzone
 
 When a user sucessfully logs in, they are redirected to the memberzone page. They are greated with welcome message including their name so they know their login was sucessful.
