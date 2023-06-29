@@ -112,13 +112,20 @@ The facilities page presents the site user with an overview of facilities availa
 ### Contact Us
 
 The 'Contact Us' page give the user basic location and contact information, with an embeded google maps.
-Additionally, for ease of submitting an enquiry the user is able to complete a contact form. This form will the send an email to the whgcproshop@gmail.com account and send an automatic reply to the user to confirm receipt.
+Additionally, for ease of submitting an enquiry the user is able to complete a contact form. This form will then send an email to the whgcproshop@gmail.com account and send an automatic reply to the user to confirm receipt.
 
 ![Contact page](documentation/contact-page.png)
 
 If the user is logged in, this online enquiry form will auto populate their basic details for ease of use.
 
 ![Contact page - user auto](documentation/contact-page-user.png)
+
+### Memberzone
+
+When a user sucessfully logs in, they are redirect to the memberzone page. They are greated with welcome message including their name so they know their login was sucessful.
+From this page they are able to select to create a new booking or view and edit existing ones.
+
+![Memberzone](documentation/memberzone.png)
 
 ### Future Features
 
