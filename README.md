@@ -85,13 +85,13 @@ The navigation also changed to a hamburger menu when the screen size is smaller 
 
 ![Navigation - collapsed hamburger view](documentation/navbar-hamburger-collapsed.png)
 
-### Footer
+#### Footer
 
 In addition to the navigation bar, on the bottom on every page is a footer. This shows the golf club logo and basic contact information for easy access for the site user.
 
 ![Footer](documentation/footer.png)
 
-### Home Page/Landing Page
+#### Home Page/Landing Page
 
 When you first access the site, you are directed to the home page. This has a bold welcome statement so the user can verify the site they have visited quickly.
 
@@ -103,13 +103,13 @@ There is a summary of the course, club house and membership for quick informatio
 
 ![Home page](documentation/home-page-new-user.png)
 
-### About - Facilities
+#### About - Facilities
 
 The facilities page presents the site user with an overview of facilities available at the golf course. This is shown with relevant images to show case them with overlaying banners in the accent green colour enhance them and make them eye catching.
 
 ![Facilities page](documentation/facilities-page.png)
 
-### Contact Us
+#### Contact Us
 
 The 'Contact Us' page give the user basic location and contact information, with an embeded google maps.
 Additionally, for ease of submitting an enquiry the user is able to complete a contact form. This form will then send an email to the whgcproshop@gmail.com account and send an automatic reply to the user to confirm receipt.
@@ -120,7 +120,7 @@ If the user is logged in, this online enquiry form will auto populate their basi
 
 ![Contact page - user auto](documentation/contact-page-user.png)
 
-### User Registration
+#### User Registration
 
 Within the navigation bar, there is a link to register for a new account. This takes the user to a registration page to complete.
 
@@ -130,28 +130,28 @@ Once completed, the user is redirected back to the home page and a success alert
 
 ![Registraion Success](documentation/register-success.png)
 
-### User Login
+#### User Login
 
 Within the navigation bar, there is a link to login for users who already have an account. This takes the user to a login page. Upon sucessful login, the user is directed to the home page.
 
 ![Login](documentation/login.png)
 
-### User Logout
+#### User Logout
 
 Within the navigation bar, there is a link to logout for users who have already logged in. This logs the user out, returning them to the home page with a success alert displayed.
 
 ![Logout](documentation/user-logout.png)
 
-### Memberzone
+#### Memberzone
 
 When a user has sucessfully logged in, they are able to click into the memberzone from the navigation bar. From here they are greated with a welcome message including their name.
 From this page they are able to select to create a new booking or view and edit existing ones.
 
 ![Memberzone](documentation/memberzone.png)
 
-### Booking a Tee Time
+#### Booking a Tee Time
 
-#### First step - select date
+##### First step - select date
 
 Booking a tee time is completed in two steps. In the first instance, the site user is directed to the page to select a date they wish to book from. The date will default to the next calendar day.
 
@@ -161,7 +161,7 @@ To prevent the user from selecting a date prior to this, an error message will b
 
 ![Booking - Select a Date Error](documentation/booking-date-error.png)
 
-#### Second step - select time and number of players
+##### Second step - select time and number of players
 
 After the date is selected, the user can then view available times for that day. They will need to select their time, and the number of players for the booking to then submit it.
 
@@ -171,7 +171,7 @@ Once the booking is complete, the user will be redirected back to the memberzone
 
 ![Booking - Confirmation](documentation/booking-confirmation.png)
 
-### View, Edit, and Cancel Bookings
+#### View, Edit, and Cancel Bookings
 
 #### View Bookings
 
