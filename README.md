@@ -83,7 +83,7 @@ Please see below a table showing the key requirements of the site and their impo
 
 - Whitenoise was used to serve the static files - [Whitenoise](https://whitenoise.readthedocs.io/en/stable/)
 - Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
-- jQuery was used for is dom manipulation in the script files - [jQuery](https://jquery.com/)
+- jQuery was used for dom manipulation in the script files - [jQuery](https://jquery.com/)
 - Elephantsql was used for the sites database - [ElephantSQL](https://customer.elephantsql.com/)
 - EmailJS was used to send online requests to the proshop and an autoreply to the site user - [EmailJS](https://www.emailjs.com/)
 
