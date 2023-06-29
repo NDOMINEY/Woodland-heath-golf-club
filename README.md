@@ -165,7 +165,7 @@ Each booking displayed has a button to enable to the user to edit the number of 
 
 #### Cancel Bookings
 
-Each booking also has a cancel button. Upon clicking this a modal pops up that for the user to confirm that they want to cancel that particular booking.
+Each booking also has a cancel button. Upon clicking this a modal pops up for the user to confirm that they want to cancel that particular booking.
 
 ![Cancel Booking](documentation/cancel-booking-prompt.png)
 
