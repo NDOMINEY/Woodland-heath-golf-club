@@ -109,6 +109,17 @@ The facilities page presents the site user with an overview of facilities availa
 
 ![Facilities page](documentation/facilities-page.png)
 
+### Contact Us
+
+The 'Contact Us' page give the user basic location and contact information, with an embeded google maps.
+Additionally, for ease of submitting an enquiry the user is able to complete a contact form. This form will the send an email to the whgcproshop@gmail.com account and send an automatic reply to the user to confirm receipt.
+
+![Contact page](documentation/contact-page.png)
+
+If the user is logged in, this online enquiry form will auto populate their basic deals for ease of use.
+
+![Contact page - user auto](documentation/contact-page-user.png)
+
 ### Future Features
 
 ## Testing
