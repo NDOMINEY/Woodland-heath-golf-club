@@ -127,6 +127,28 @@ From this page they are able to select to create a new booking or view and edit 
 
 ![Memberzone](documentation/memberzone.png)
 
+### Booking a Tee Time
+
+#### First step - select date
+
+Booking a tee time is completed in two steps. In the first instance, the site user is directed to the page to select a date they wish to book from. The date will default to the next calendar day.
+
+![Booking - Select a Date](documentation/select-booking-date.png)
+
+To prevent the user from selecting a date prior to this, a error message will be displayed and the button to progress the booking is no longer visible.
+
+![Booking - Select a Date Error](documentation/booking-date-error.png)
+
+#### Second step - select time and number of players
+
+After the date is selected, the user can then view available time from that day. They will need to select their time, and the number of players for the booking to then submit it.
+
+![Booking - Select time and players](documentation/booking-time.png)
+
+Once the booking is complete, the user will be redirected back to the memberzone page and an alert will appear confirming the booking.
+
+![Booking - Confirmation](documentation/booking-confirmation.png)
+
 ### Future Features
 
 ## Testing
