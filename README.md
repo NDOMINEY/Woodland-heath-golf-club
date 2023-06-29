@@ -53,6 +53,9 @@ Please see below a table showing the key requirements of the site and their impo
 
 ### Wireframes:
 
+- Please find link to [Full Screen Wireframe](documentation/wireframe-large-screen.pdf)
+- Please find link to [Mobile Screen Wireframe](documentation/wireframes-mobile.pdf)
+
 ### Colour Scheme:
 
 A neutral colour scheme was selected with a green accent colour to compliment the golf course image back ground.
