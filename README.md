@@ -12,6 +12,19 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
 ## Table of Contents
 
 - [Requirements](#requirements "Requirements")
+
+Please see below a table showing the key requirements of the site and their importance.
+
+|                                     Requirement                                     | Importance | Viability/Feasibility |
+| :---------------------------------------------------------------------------------: | :--------: | :-------------------: |
+|         Have a clear and purposeful landing page displaying the golf course         |     5      |           5           |
+|      Provide the site visitor with information about the facilities available       |     5      |           5           |
+| Enable the user to be able to register for a login to gain access to online booking |     5      |           5           |
+|                    Enable a login link so user can easily login                     |     5      |           5           |
+|                          Enable logged in user to log out                           |     5      |           5           |
+|  Have a memberzone which provides ability to book a tee time, edit, and delete it   |     5      |           5           |
+|       Provide the site user a way to be able to submit an online contact form       |     4      |           5           |
+
 - [Design](#design "Design")
   - [Wireframes](#wireframes "Wireframes")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
