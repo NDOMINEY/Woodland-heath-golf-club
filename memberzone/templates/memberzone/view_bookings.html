@@ -50,12 +50,11 @@
 
 
             <!-- Modal template from bootstrap to confirm booking cancellation -->
-            <section class="modal fade" id="{{booking.id}}" tabindex="-1" aria-labelledby="CancelBooking"
-                aria-hidden="true">
+            <section class="modal fade" id="{{booking.id}}" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Cancel Booking</h1>
+                            <h1 class="modal-title fs-5">Cancel Booking</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -66,8 +65,8 @@
                             <button type="button" class="back-btn-small btn btn-secondary" data-bs-dismiss="modal">Back
                                 to Bookings</button>
                             <a href="delete_bookings/{{booking.id}}">
-                                <button type="button" class="active-btn-small btn btn btn-secondary">Cancel
-                                    Booking</button>
+                                <div class="active-btn-small btn btn btn-secondary">Cancel
+                                    Booking</div>
                             </a>
                         </div>
                     </div>
