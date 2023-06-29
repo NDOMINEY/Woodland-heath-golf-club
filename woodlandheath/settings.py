@@ -47,16 +47,6 @@ INSTALLED_APPS = [
     'general',
     'users',
     'memberzone',
-    'django_nose',
-]
-
-# Use nose to run all tests
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-
-# Tell nose to measure coverage on the 'foo' and 'bar' apps
-NOSE_ARGS = [
-    '--with-coverage',
-    '--cover-package=memberzone',
 ]
 
 MIDDLEWARE = [
@@ -155,7 +145,8 @@ STORAGES = {
     },
 }
 
-# Don't store the original (un-hashed filename) version of static files, to reduce slug size:
+# Don't store the original (un-hashed filename) version of static files, to
+# reduce slug size:
 # https://whitenoise.readthedocs.io/en/latest/django.html#WHITENOISE_KEEP_ONLY_HASHED_FILES
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
