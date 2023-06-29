@@ -16,10 +16,8 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
   - [Wireframes](#wireframes "Wireframes")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
 - [Features](#features "Features")
-
   - [Existing Features](#existing-features "Existing Features")
   - [Future Features](#future-features "Future Features")
-
 - [Testing](#testing "Testing")
   - [Development Process](#development-process "Development Process")
   - [Usability Testing](#usability-testing "Usability Testing")
@@ -87,7 +85,11 @@ The navigation also changed to a hamburger menu when the screen size is smaller 
 
 ![Navigation - collapsed hamburger view](documentation/navbar-hamburger-collapsed.png)
 
-#### Introduction
+### Footer
+
+In addition to the navigation bar, on the bottom on every page is a footer. This shows the golf club logo and basic contact information for easy access for the site user.
+
+![Footer](documentation/footer.png)
 
 ### Future Features
 
