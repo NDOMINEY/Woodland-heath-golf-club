@@ -61,7 +61,7 @@ Through this object I have taken an agile approach to my development. To do this
 To be able to create an online booking system a PostgreSQL database was implemented to hold user information and booking information. The User model was used from the pre-built one supplied by Django. <br>
 For the booking details, a custom model was created that was relational to the existing user model. Please see below the database diagram.
 
-[Database Diagram](hdocumentation/db-diagram.png)
+![Database Diagram](documentation/db-diagram.png)
 
 ### Wireframes:
 
