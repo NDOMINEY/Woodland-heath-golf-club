@@ -6,14 +6,18 @@ from django.contrib import messages
 
 
 def home_view(request):
+    """ loads home page """
     return render(request, 'general/home.html')
 
 
 def about(request):
+    """ loads about page """
     return render(request, 'general/about.html')
 
 
 def contact_us(request):
+    """ loads contact us page and loads user details if present """
+
     user = request.user
 
     if request.method == "POST":
