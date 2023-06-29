@@ -227,9 +227,8 @@ To ensure that the website meets the expectation of user, please see below user 
 | <br>UC-009    | <br>As a user I want to be able to delete my bookings                                         | <br>TC-005, TC-008, TC-014, TC-015, TC-022, TC-033, TC-038, TC-039, TC-040, TC-041                         | <br>Pass   |
 | <br>UC-010    | <br>As a user I want to be able to logout to keep my information private                      | <br>TC-042                                                                                                 | <br>Pass   |
 | <br>UC-011    | <br>As a user I want to be able to navigate through the whole site from each page             | <br>TC-018, TC-019, TC-020                                                                                 | <br>Pass   |
+
 ### Functional Testing
-
-
 
 Upon deployment through heroku, a total of 42 functional tests were carried out to ensure the website functioned correctly.
 
@@ -237,6 +236,7 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 
 <details>
 
+<summary>Functional Test Cases</summary>
 |  <br>Test Case  |  <br>Description                                                                                                                                                                                                           |  <br>Pre Conditions                                                                   |  <br>Steps to Executed                                                                                                                                                                                          |  <br>Result  |  <br>Comments  |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------|
 |  <br>TC-001     |  <br>Website Landing Page - Upon loading the site the user is greeted with a home page                                                                                                                                     |  <br>N/A                                                                              |  <br>1. Open game in browser<br> <br><br><br> <br>2. Enter website URL<br> <br><br><br> <br>3. Check home page is loaded                                                                                        |  <br>Pass    |  <br>          |
@@ -280,14 +280,24 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 |  <br>TC-039     |  <br>View, Edit and Cancel Bookings - when the cancel booking pop up appears the following buttons are displayed - Back to Bookings and Cancel Booking                                                                     |  <br>User is logged in and cancel booking button has been clicked                     |  <br>1. Check pop up contains the following two buttons - Back to Bookings and Cancel Booking                                                                                                                   |  <br>Pass    |  <br>          |
 |  <br>TC-040     |  <br>View, Edit and Cancel Bookings - when the cancel booking pop up appears and the Back to Booking is clicked the user is redirected back to the view bookings page                                                      |  <br>User is logged in and cancel booking button has been clicked                     |  <br>1. Click the Back to Booking button<br> <br><br><br> <br>2. Check user is redirected back to view bookings page                                                                                            |  <br>Pass    |  <br>          |
 |  <br>TC-041     |  <br>View, Edit and Cancel Bookings - when the cancel booking pop up appears and the Cancel Booking button is clicked the user is redirected back to the view bookings page and confirmation of cancellation is displayed  |  <br>User is logged in and cancel booking button has been clicked                     |  <br>1. Click Cancel Booking Button<br> <br><br><br> <br>2. Check user is redirected back to view bookings page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm the booking was cancelled  |  <br>Pass    |  <br>          |
-|  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                            |  <br>User is logged in                                                                |  <br>1. Click Logout link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |  <br>          ||  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                              |  <br>User is logged in                                                                |  <br>1. Click ‘Logout’ link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |
+|  <br>TC-042     |  <br>Logout - When the logout button is clicked in the navigation bar, the user is redirected to the home page and a success alert is displayed                                                                            |  <br>User is logged in                                                                |  <br>1. Click Logout link in navigation bar<br> <br><br><br> <br>2. Check user is redirected back to home page <br> <br><br><br> <br>3. Check alert is displayed to user to confirm they have been logged out   |  <br>Pass    |  <br>          |
 
+</details>
 
+<br>
 
+### Validator Testing
 
+Lighthouse tests were carried out accross the site to ensure performance and accessibility scored highly.
 
+- [Home](documentation/home-lighthouse.pdf)
+- [Facilities](documentation/facilities-lighthouse.pdf)
+- [Contact Us](documentation/contact-lighthouse.pdf)
+- [Booking - Date](documentation/booking-lighthouse.pdf)
+- [Booking - Time](documentation/bookingtime-lighthouse.pdf)
+- [View Bookings](documentation/viewbookings-lighthouse.pdf)
 
-Validator Testing## TValidator TestsUsed
+## Technologies Used
 
 - Whitenoise was used to serve the static files - [Whitenoise](https://whitenoise.readthedocs.io/en/stable/)
 - Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
