@@ -40,8 +40,7 @@ class MakeBooking(ModelForm):
 
 
 class ChangeBooking(ModelForm):
-        """ form for selecting booking date """
-
+    """ form for selecting booking date """
 
     class Meta:
         model = BookingTimes
