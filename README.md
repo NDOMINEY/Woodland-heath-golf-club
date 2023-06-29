@@ -285,8 +285,7 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 
 
 <br><br></details>### Validator Testing
-
-### Unfixed Bugs
+### Validator Testing### Unfixed Bugs
 
 ## Technologies Used
 
