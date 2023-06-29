@@ -8,6 +8,7 @@ from . forms import UserRegistration
 
 
 def login_user(request):
+    """ loads login user page and submits request to login if form completed """
 
     if request.method == "POST":
 
@@ -30,6 +31,8 @@ def login_user(request):
 
 
 def logout_view(request):
+    """ processes user logout and redirects to home page """
+
     logout(request)
     messages.success(
         request, "You have been logged out.")
@@ -38,6 +41,9 @@ def logout_view(request):
 
 
 def register_user(request):
+    """ loads registration  page and submits request to 
+    register if form completed """
+
     if request.method == "POST":
         form = UserRegistration(request.POST)
         if form.is_valid():

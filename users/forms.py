@@ -4,6 +4,8 @@ from django import forms
 
 
 class UserRegistration(UserCreationForm):
+    """ custom form to complete user registration """
+
     email = forms.EmailField(widget=forms.EmailInput(
         attrs={'class': 'form-control'}))
     first_name = forms.CharField(
