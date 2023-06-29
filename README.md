@@ -65,6 +65,28 @@ A neutral colour scheme was selected with a green accent colour to compliment th
 
 ### Existing Features
 
+#### Navigation Bar
+
+The navigation bar is a fixed element of the top of the page and is uniform accross all areas of the site. It have the company logo and clear links to explore different areas of the site. When the user is not logged in, the nav bar shows links to 'login' and 'register'. Once logged in, this changes to 'memberzone' and 'log out'
+
+##### Navigation bar - user not logged in
+
+![Navigation - user not logged in](documentation/navbar-logged-out.png)
+
+##### Navigation bar - user logged in
+
+![Navigation - user logged in](documentation/navbar-logged-in.png)
+
+The navigation also changed to a hamburger menu when the screen size is smaller for viewability and usability.
+
+##### Navigation bar - hamburger view
+
+![Navigation - hamburger view](documentation/navbar-hamburger.png)
+
+##### Navigation bar - collapsed hamburger view
+
+![Navigation - collapsed hamburger view](documentation/navbar-hamburger-collapsed.png)
+
 #### Introduction
 
 ### Future Features
