@@ -106,4 +106,30 @@ Then name your branch and select the branch source
 
 ## Credits
 
-### insert credits
+### Content
+
+#### Django login and registration
+
+Django tutorial videos from Codemy on youtube to help implement the register, login and logout functionality - [Codemy](https://www.youtube.com/@Codemycom/search?query=django%20user)
+
+#### Favicon creation
+
+The following generator was used for the sites favicon - [favicon.io](https://favicon.io/favicon-converter/)
+
+#### Image compression
+
+The following online tool was used to compress the size of images for the site - [tinypng & tinyjpeg](https://tinypng.com/)
+
+### Media
+
+#### Images
+
+The following images were sourced from [Pexels](https://www.pexels.com/)
+
+- [Background golf course](https://www.pexels.com/photo/green-leaf-trees-on-grass-field-914682/)
+- [Features - Mini Golf](https://www.pexels.com/photo/green-and-yellow-putters-on-green-grass-6370068/)
+- [Features - Golf Tuition](https://www.pexels.com/photo/boy-holding-golf-club-in-front-of-crouching-woman-1325655/)
+- [Features - Pro Shop](https://www.pexels.com/photo/man-standing-beside-man-holding-gray-club-1325735/)
+- [Features - Putting Area](https://www.pexels.com/photo/person-playing-golf-1325661/)
+- [Features - Golf Buggy](https://www.pexels.com/photo/bag-bus-car-cart-274108/)
+- [Features - Practice Range](https://www.pexels.com/photo/person-swinging-golf-club-on-field-1325659/)
