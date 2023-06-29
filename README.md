@@ -207,6 +207,10 @@ This particularly enabled me to highlight styling issues where I predominantly u
 
 ### Usability Testing
 
+All text throughout the site has been styled to be clear and easy to ready. Although the background is an image through out the website, I used a translucent layer between this and text to ensure it was still readable.
+<br>
+Within my colour scheme, I also ensure I had an accent colour which I was able to use to direct the user to the next steps.
+
 ### User Requirement Testing
 
 ### Functional Testing
