@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+import sys
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
@@ -45,7 +46,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'general',
     'users',
-    'memberzone'
+    'memberzone',
+    'django_nose',
+]
+
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# Tell nose to measure coverage on the 'foo' and 'bar' apps
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=memberzone',
 ]
 
 MIDDLEWARE = [
@@ -84,16 +95,15 @@ WSGI_APPLICATION = 'woodlandheath.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"),),
 }
+
+if 'test' in sys.argv:
+    for db_test in ['default']:
+        DATABASES[db_test]['ENGINE'] = 'django.db.backends.sqlite3'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
