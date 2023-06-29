@@ -4,7 +4,7 @@ Woodland Heath Golf Club, is a golf club based in norfolk. The purpose of this s
 
 The targetted audience is all who have a love of golf and also family and friend time.
 
-![](documentation/home-page.png)
+![Landing Page](documentation/home-page.png)
 
 Live Site - [Woodland Health Golf Club](https://woodland-health-golf-club.herokuapp.com/) <br>
 Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/NDOMINEY/Woodland-heath-golf-club)
@@ -51,11 +51,13 @@ Please see below a table showing the key requirements of the site and their impo
 
 ## Design
 
-### Flow Diagram:
-
 ### Wireframes:
 
 ### Colour Scheme:
+
+A neutral colour scheme was selected with a green accent colour to compliment the golf course image back ground.
+
+![Colour Scheme](documentation/colour-scheme.png)
 
 ## Features
 
