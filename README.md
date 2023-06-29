@@ -103,6 +103,12 @@ There is a summary of the course, club house and membership for quick informatio
 
 ![Home page](documentation/home-page-new-user.png)
 
+### About - Facilities
+
+The facilities page presents the site user with an overview of facilities available at the golf course. This is shown with relevant images to show case them with overlaying banners in the accent green colour enhance them and make them eye catching.
+
+![Facilities page](documentation/facilities-page.png)
+
 ### Future Features
 
 ## Testing
