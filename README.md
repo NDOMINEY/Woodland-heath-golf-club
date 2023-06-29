@@ -122,7 +122,7 @@ If the user is logged in, this online enquiry form will auto populate their basi
 
 ### Memberzone
 
-When a user sucessfully logs in, they are redirect to the memberzone page. They are greated with welcome message including their name so they know their login was sucessful.
+When a user sucessfully logs in, they are redirected to the memberzone page. They are greated with welcome message including their name so they know their login was sucessful.
 From this page they are able to select to create a new booking or view and edit existing ones.
 
 ![Memberzone](documentation/memberzone.png)
