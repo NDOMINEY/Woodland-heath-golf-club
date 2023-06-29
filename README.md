@@ -213,6 +213,21 @@ Within my colour scheme, I also ensure I had an accent colour which I was able t
 
 ### User Requirement Testing
 
+To ensure that the website meets the expectation of user, please see below user cases which summarise whether they pass and also which tests relate to them.
+
+| <br>User Case | <br>Description                                                                               | <br>Relevant test cases                                                                                    | <br>Result |
+| ------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
+| <br>UC-001    | <br>As a user I want to be presented with a clear landing page with basic contact information | <br>TC-001, TC-002                                                                                         | <br>Pass   |
+| <br>UC-002    | <br>As a user I want to be able to see want services are available at the golf course         | <br>TC-003, TC-009                                                                                         | <br>Pass   |
+| <br>UC-003    | <br>As a user I want to be able to submit an online enquiry                                   | <br>TC-010, TC-011, TC-012, TC-013                                                                         | <br>Pass   |
+| <br>UC-004    | <br>As a user I want to be able to create an account                                          | <br>TC-007, TC-016, TC-017                                                                                 | <br>Pass   |
+| <br>UC-005    | <br>As a user I want to be able to view available booking                                     | <br>TC-005, TC-008, TC-014, TC-015, TC-022                                                                 | <br>Pass   |
+| <br>UC-006    | <br>As a user I want to be able to create a booking                                           | <br>TC-005, TC-008, TC-014, TC-015, TC-022, TC-023, TC-024, TC-025, TC-026, TC-027, TC-028, TC-029, TC-030 | <br>Pass   |
+| <br>UC-007    | <br>As a user I want to be able to view my bookings                                           | <br>TC-005, TC-008, TC-014, TC-015, TC-022, TC-031, TC-032                                                 | <br>Pass   |
+| <br>UC-008    | <br>As a user I want to be able to edit the total number of player in bookings                | <br>TC-005, TC-008, TC-014, TC-015, TC-022, TC-033, TC-034, TC-035, TC-036, TC-037                         | <br>Pass   |
+| <br>UC-009    | <br>As a user I want to be able to delete my bookings                                         | <br>TC-005, TC-008, TC-014, TC-015, TC-022, TC-033, TC-038, TC-039, TC-040, TC-041                         | <br>Pass   |
+| <br>UC-010    | <br>As a user I want to be able to logout to keep my information private                      | <br>TC-042                                                                                                 | <br>Pass   |
+| <br>UC-011    | <br>As a user I want to be able to navigate through the whole site from each page             | <br>TC-018, TC-019, TC-020                                                                                 | <br>Pass   |
 ### Functional Testing
 
 ### Validator Testing
