@@ -14,7 +14,7 @@ Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/
 - [Requirements](#requirements "Requirements")
 - [Agile Methods](#agile-methods "Agile Methods")
 - [Design](#design "Design")
-  - [Database Schema](#database_scheme "Database Schema")
+  - [Database Schema](#database-schema "Database Schema")
   - [Wireframes](#wireframes "Wireframes")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
 - [Features](#features "Features")
