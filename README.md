@@ -201,6 +201,10 @@ If the user continues to cancel the booking, they are returned to the view booki
 
 ### Development Process
 
+Throughout the development process, each feature added was manually tested locally to ensure it worked as intended. Once I was happy with the result whilst in localhost, I would then add, commit and push to GitHub. This resulted in realtime changes and adjustments before committing the new code through to main.
+<br>
+This particularly enabled me to highlight styling issues where I predominantly used bootstrap and then customised accordingly in a separate style.css. For instance, on one circumstance through the debugging process I found that bootstrap had used !important. Although not best practice, I had to use this in my own css to be able to override it.
+
 ### Usability Testing
 
 ### User Requirement Testing
