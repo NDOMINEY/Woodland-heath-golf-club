@@ -288,6 +288,8 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 
 ### Validator Testing
 
+#### Lighthouse
+
 Lighthouse tests were carried out accross the site to ensure performance and accessibility scored highly.
 
 - [Home](documentation/home-lighthouse.pdf)
@@ -297,13 +299,22 @@ Lighthouse tests were carried out accross the site to ensure performance and acc
 - [Booking - Time](documentation/bookingtime-lighthouse.pdf)
 - [View Bookings](documentation/viewbookings-lighthouse.pdf)
 
-## Technologies Used
+#### HTML Validator
+
+HTML validator tests were carried out accross the site.
+
+#### Python
+
+Through the IDE pep8 compliance was checked to ensure the code was validated
+
+# Technologies Used
 
 - Whitenoise was used to serve the static files - [Whitenoise](https://whitenoise.readthedocs.io/en/stable/)
 - Bootstrap was used for basic html styling - [Bootstrap](https://getbootstrap.com/)
 - jQuery was used for dom manipulation in the script files - [jQuery](https://jquery.com/)
 - Elephantsql was used for the sites database - [ElephantSQL](https://customer.elephantsql.com/)
-- EmailJS was used to send online requests to the proshop and an autoreply to the site user - [EmailJS](https://www.emailjs.com/)
+- EmailJS was used to send online requests to the proshop and an autoreply to
+  the site user - [EmailJS](https://www.emailjs.com/)
 
 ### Main Languages Used
 
