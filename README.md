@@ -136,6 +136,12 @@ Within the navigation bar, there is a link to login for users who already have a
 
 ![Login](documentation/login.png)
 
+### User Logout
+
+Within the navigation bar, there is a link to logout for users who have already logged in. This logs the user out, returning them to the home page with a success alert displayed.
+
+![Logout](documentation/user-logout.png)
+
 ### Memberzone
 
 When a user has sucessfully logged in, they are able to click into the memberzone from the navigation bar. From here they are greated with a welcome message including their name.
