@@ -135,19 +135,43 @@ Booking a tee time is completed in two steps. In the first instance, the site us
 
 ![Booking - Select a Date](documentation/select-booking-date.png)
 
-To prevent the user from selecting a date prior to this, a error message will be displayed and the button to progress the booking is no longer visible.
+To prevent the user from selecting a date prior to this, an error message will be displayed and the button to progress the booking is no longer visible.
 
 ![Booking - Select a Date Error](documentation/booking-date-error.png)
 
 #### Second step - select time and number of players
 
-After the date is selected, the user can then view available time from that day. They will need to select their time, and the number of players for the booking to then submit it.
+After the date is selected, the user can then view available times for that day. They will need to select their time, and the number of players for the booking to then submit it.
 
 ![Booking - Select time and players](documentation/booking-time.png)
 
 Once the booking is complete, the user will be redirected back to the memberzone page and an alert will appear confirming the booking.
 
 ![Booking - Confirmation](documentation/booking-confirmation.png)
+
+### View, Edit, and Cancel Bookings
+
+#### View Bookings
+
+Within the memberzone, the user is able to select to view and edit bookings. This directs the user to a page listing their current bookings. If there are no bookings present it will display a message to let them know that this is the case.
+
+![View Bookings](documentation/view-bookings.png)
+
+#### Edit Players in Bookings
+
+Each booking displayed has a button to enable to the user to edit the number of players for their booking. This redirects the user to an edit page which displays the selected booking and a drop down to change the total number of players.
+
+![Edit Booking](documentation/edit-booking.png)
+
+#### Cancel Bookings
+
+Each booking also has a cancel button. Upon clicking this a modal pops up that for the user to confirm that they want to cancel that particular booking.
+
+![Cancel Booking](documentation/cancel-booking-prompt.png)
+
+If the user continues to cancel the booking, they are returned to the view bookings page and an alert is displayed to confirm this has been completed.
+
+![Cancel Booking Confirmation](documentation/cancel-success.png)
 
 ### Future Features
 
