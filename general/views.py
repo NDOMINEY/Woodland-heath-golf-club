@@ -28,3 +28,7 @@ def contact_us(request):
         return render(request, 'general/home.html')
 
     return render(request, 'general/contact_us.html', {'user': user})
+
+
+def error_404(request, exception):
+    return render(request, 'general/404.html')

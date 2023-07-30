@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('general.urls')),
     path('users/', include('users.urls')),
     path('memberzone/', include('memberzone.urls')),
-
 ]
+
+handler404 = 'general.views.error_404'
