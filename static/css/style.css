@@ -81,6 +81,20 @@ footer {
     margin-bottom: 25px;
 }
 
+.margin-auto {
+    margin: auto;
+}
+
+.container-sm {
+    max-width: 375px;
+}
+
+@media only screen and (max-width: 777px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
 /* Booking Form Styling */
 
 
