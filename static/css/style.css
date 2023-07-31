@@ -85,12 +85,16 @@ footer {
     margin: auto;
 }
 
-.container-sm {
+#login-container {
     max-width: 375px;
 }
 
+#register-container {
+    max-width: 720px;
+}
+
 @media only screen and (max-width: 777px) {
-    .container {
+    #register-container {
         max-width: 375px;
     }
 }
