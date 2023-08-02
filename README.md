@@ -6,7 +6,7 @@ The targetted audience is all who have a love of golf and also family and friend
 
 ![Landing Page](documentation/home-page.png)
 
-Live Site - [Woodland Health Golf Club](https://woodland-health-golf-club.herokuapp.com/) <br>
+Live Site - [Woodland Health Golf Club](https://woodland-heath-golf-club-f6dda419f1e2.herokuapp.com/) <br>
 Project Repository - [Woodland Heath Golf Club - Repository](https://github.com/NDOMINEY/Woodland-heath-golf-club)
 
 ## Table of Contents
